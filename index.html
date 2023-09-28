@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eileen作品集</title>
+    <!-- bs的樣式表 -->
+    <link rel="stylesheet" href="./css/bootstrap-4.0.0.css">
+    <!-- BS的ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.7.2-web/css/all.css">
+    <style>
+        h1 {
+            /* 水平置中 */
+            text-align: center;
+        }
+
+        p {
+            /* 左右對齊 */
+            text-align: justify;
+        }
+
+        i {
+            color: #ff5959;
+            margin-right: 10px;
+            font-size: 3rem;
+        }
+
+        /* 文字背景區 */
+        .col {
+            width: 600px;
+            background-color: rgb(255, 255, 255, 0.5);
+            border-radius: 30px;
+            padding: 20px;
+        }
+
+        #home {
+            background-color: #ff6363;
+        }
+
+        #About {
+            background-color: #ffff;
+        }
+
+        #CIS {
+            background-color: #9999ff;
+        }
+
+        #GRAPHIC {
+            background-color: #b5ffb5;
+        }
+
+        #WEB {
+            background-color: #DBABFF;
+        }
+
+        #DRAW {
+            background-color: #ffff59;
+        }
+
+        html,
+        body {
+            margin: auto;
+            width: 1520px;
+            height: 100%;
+
+        }
+
+        section {
+            width: 100%;
+            margin: auto;
+            height: 100%;
+            background-size: cover;
+            background-position: center center;
+            padding-top: 150px;
+        }
+
+        .cat {
+            text-align: left;
+            margin-top: 20px;
+            margin-left: 220px;
+        }
+
+        .monkey {
+            text-align: center;
+            margin-top: -380px;
+        }
+
+        .girl {
+            text-align: right;
+            margin-top: -320px;
+            margin-right: 220px;
+        }
+
+        .bird {
+            text-align: right;
+            margin-top: -100px;
+            margin-right: 200px;
+        }
+
+        .eileen {
+            text-align: right;
+            margin-top: -770px;
+        }
+
+        .bear {
+            text-align: left;
+            margin-top: -500px;
+            margin-left: 100px;
+        }
+
+        .white {
+            text-align: left;
+            margin-top: -550px;
+            margin-left: 100px;
+        }
+
+        .rabbit {
+            text-align: left;
+            margin-top: -600px;
+            margin-left: 100px;
+        }
+
+        .monkey:hover {
+            transform: scale(1.1);
+        }
+
+        .gg {
+            text-align: left;
+            margin-top: -550px;
+            margin-left: 100px;
+        }
+
+        .box img {
+            /* width: 505px;; */
+            /* height: 375px; */
+            vertical-align: top;
+        }
+
+        .child {
+            text-align: right;
+            margin-top: -650px;
+            margin-right: 50px;
+        }
+
+        .coffee {
+            text-align: right;
+            margin-right: 50px;
+        }
+
+        .banner {
+            text-align: right;
+            margin-right: 50px;
+        }
+
+        .pen {
+            text-align: left;
+            margin-top: -220px;
+        }
+
+        .pen2 {
+            text-align: right;
+            margin-top: -280px;
+        }
+
+        .pen3 {
+            text-align: left;
+            margin-top: -350px;
+            margin-left: 400px;
+        }
+
+        .girl2 {
+            text-align: right;
+            margin-top: -650px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <h2>PORTFOLIO</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- mr-auto:右邊留白(靠左) -->
+            <!-- ml-auto:右邊留白(靠右) -->
+            <!-- mx-auto:右邊留白(置中) -->
+            <ul class="navbar-nav ml-auto mr-5">
+                <li class="nav-item active">
+                    <a class="nav-link js-scroll-trigger" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#About">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link js-scroll-trigger" href="#CIS">CIS</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link js-scroll-trigger" href="#GRAPHIC">Graphic</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link js-scroll-trigger" href="#WEB">Web</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link js-scroll-trigger" href="#DRAW">Draw</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <!-- 選單各區 -->
+    <!-- HOME -->
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xl-8 col-md-12 mx-auto">
+                    <h1><i class="bi bi-house-heart-fill"></i>HOME</h1>
+                    <marquee onmouseover="stop();" onmouseout="start();" scrollamount="15" behavior="scroll"
+                        direction="left">
+                        <h2>歡迎來到蔡秀玲的作品集展示空間!</h2>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <div class="cat">
+            <img width="300" src="./images/p31.png" alt="">
+        </div>
+        <div class="monkey">
+            <img width="300" src="./images/p32.png" alt="">
+        </div>
+        <div class="girl">
+            <img width="320" src="./images/p33.png" alt="">
+        </div>
+
+    </section>
+    <!-- ABOUT -->
+    <section id="About">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xl-8 col-md-12 mx-auto">
+                    <h1><i class="bi bi-emoji-smile-fill"></i>ABOUT</h1>
+                    <P>●畢業於東海大學化學工程學系碩士班<br>
+                        ●2009/1-2023/3(從事綠能產業研發工作)，曾參與多個政府相關專案計畫執行<br>
+                        ●具備Adobe Photoshop、illustrator、InDesign軟體操作設計能力<br>
+                        ●具備基礎前端網頁使用Visual Studio Code,撰寫HTML與CSS<br>
+                        為人謙虛、敬業、認真且樂於溝通，有較強的組織能力與團隊精神；個性開朗隨和、樂觀上進、學習力強；培養終身學習汲取新知的職場態度。
+                    </P>
+                </div>
+            </div>
+        </div>
+        <div class="bird">
+            <img width="730" src="./images/bird.png" alt="">
+        </div>
+        <div class="eileen">
+            <img width="535" src="./images/eileen.png" alt="">
+        </div>
+
+        <div class="bear">
+            <img width="210" src="./images/p27.png" alt="">
+        </div>
+
+    </section>
+    <!-- CIS -->
+    <section id="CIS">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xl-8 col-md-12 mx-auto">
+                    <h1><i class="bi bi-buildings-fill"></i>CIS</h1>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <ul>
+                <li><img width="505" height="375" src="./images/p1.jpg" alt=""></li>
+                <li><img width="505" height="375" src="./images/p2.jpg" alt=""></li>
+                <li><img width="505" height="375" src="./images/p3.jpg" alt=""></li>
+                <li><img width="505" height="375" src="./images/p4.jpg" alt=""></li>
+                <li><img width="505" height="375" src="./images/p5.jpg" alt=""></li>
+                <li><img width="505" height="375" src="./images/p6.jpg" alt=""></li>
+                <li><img width="505" height="375" src="./images/p7.jpg" alt=""></li>
+                <li><img width="505" height="375" src="./images/p7-1.jpg" alt=""></li>
+                <li><img width="505" height="375" src="./images/p8.jpg" alt=""></li>
+                <li><img width="505" height="375" src="./images/p10.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="white">
+            <img width="200" src="./images/p28.png" alt="">
+        </div>
+
+    </section>
+    <!-- GRAPHIC -->
+    <section id="GRAPHIC">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xl-8 col-md-12 mx-auto">
+                    <h1><i class="bi bi-book-half"></i>GRAPHIC</h1>
+                    <P>分別針對食、衣、住、行、節日製作海報設計。</P>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <ul>
+                <li><img width="505" height="375" src="./images/p11.jpg" alt=""></li>
+                <li><img width="505" height="375" src="./images/p13.jpg" alt=""></li>
+                <li><img width="505" height="375" src="./images/p14-1.png" alt=""></li>
+                <li><img width="505" height="375" src="./images/p19.jpg" alt=""></li>
+                <li><img width="505" height="375" src="./images/p19-1.png" alt=""></li>
+                <li><img width="505" height="375" src="./images/p19-2.jpg" alt=""></li>
+                <li><img width="505" height="375" src="./images/p19-3.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="gg">
+            <img width="200" src="./images/p29.png" alt="">
+        </div>
+    </section>
+    <!-- WEB -->
+    <section id="WEB">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xl-8 col-md-12 mx-auto">
+                    <h1><i class="fas fa-tablet-alt"></i>WEB</h1>
+                    <P>IG營造一個豐富而精緻的生活畫面,MOMO banner設計,讓心靈感受花朵的饗宴,Shopee電商設計,素雅外框讓商品更顯品味精緻。
+                    </P>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <ul>
+                <li><img width="375" height="375" src="./images/p22.jpg" alt=""></li>
+                <li><img width="375" height="375" src="./images/p23.jpg" alt=""></li>
+                <li><img width="375" height="375" src="./images/p24.jpg" alt=""></li>
+                <li><img width="375" height="375" src="./images/p25.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="child">
+            <img width="300" src="./images/p20.jpg" alt="">
+        </div>
+        <div class="coffee">
+            <img width="300" src="./images/p21.jpg" alt="">
+        </div>
+        <div class="banner">
+            <img width="300" src="./images/p26.jpg" alt="">
+        </div>
+        <div class="rabbit">
+            <img width="200" src="./images/p30.png" alt="">
+        </div>
+    </section>
+    <!-- DRAW -->
+    <section id="DRAW">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xl-8 col-md-12 mx-auto">
+                    <h1><i class="fas fa-pencil-alt"></i>DRAW</h1>
+                    <P>運用白色水泥漆和基本色料 ( 黑、黃、藍、紅 )，用藥盒當調色盤進行調色，用手繪製精細畫面場景，融合劇情元素，一種猶如仿古手繪電影海報，充滿溫度，引領觀眾跨越時空進入奇妙世界，展現生動戲劇氛圍。
+                    </P>
+                </div>
+            </div>
+        </div>
+        <div class="pen">
+            <img width="380" src="./images/p39.jpg" alt="">
+        </div>
+        <div class="pen2">
+            <img width="550" height="350" src="./images/p38.jpg" alt="">
+        </div>
+        <div class="pen3">
+            <img width="550" height="350" src="./images/p37.jpg" alt="">
+        </div>
+        <div class="girl2">
+            <img width="500" src="./images/p34.png" alt="">
+        </div>
+    </section>
+    <!-- js -->
+    <!-- jQuery -->
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <!-- 捲動主程式 -->
+    <script src="./js/freelancer.min.js"></script>
+    <!-- 轉場主程式 -->
+    <script src="./js/jquery.easing.min.js"></script>
+    <!-- bs主程式 -->
+    <script src="./js/bootstrap-4.0.0.js"></script>
+    <script src="./js/popper.min.js"></script>
+
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery.jcarousellite.min.js"></script>
+    <script>
+        $(function () {
+            $('.box').jCarouselLite({
+                auto: 1200,
+                speed: 1500,
+                scroll: 3,
+                visible: 3,
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
